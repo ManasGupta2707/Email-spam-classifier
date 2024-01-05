@@ -1,6 +1,11 @@
 # Spam SMS Classifier
 
-This project involves building a machine learning model for classifying SMS messages as spam or not spam (ham). The dataset used for training the model is provided in a CSV file.
+This repository contains code for a Spam SMS Classifier. The classifier is built using Natural Language Processing (NLP) techniques and machine learning algorithms to classify SMS messages into spam or non-spam (ham) categories. The project involves data cleaning, exploratory data analysis (EDA), text preprocessing, model building, evaluation, and deployment.
+
+## Files and Directory Structure
+- `spam_sms_classifier.ipynb`: Jupyter Notebook containing the code for the entire project.
+- `vectorizer.pkl`: Pickle file containing the trained TF-IDF vectorizer used for text transformation.
+- `model.pkl`: Pickle file containing the trained Multinomial Naive Bayes classifier.
 
 ## Table of Contents
 1. [Data Cleaning](#data-cleaning)
