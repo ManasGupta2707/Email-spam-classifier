@@ -1,45 +1,53 @@
 # Spam SMS Classifier
 
-This project is a machine learning-based spam SMS classifier. It involves data cleaning, exploratory data analysis (EDA), text preprocessing, model building, and evaluation. The goal is to build a classifier that can differentiate between spam and ham (non-spam) SMS messages.
+This project involves building a machine learning model for classifying SMS messages as spam or not spam (ham). The dataset used for training the model is provided in a CSV file.
 
 ## Table of Contents
-1. [Introduction](#introduction)
-2. [Dataset](#dataset)
-3. [Data Cleaning](#data-cleaning)
-4. [Exploratory Data Analysis (EDA)](#eda)
-5. [Text Preprocessing](#text-preprocessing)
-6. [Model Building](#model-building)
-7. [Evaluation](#evaluation)
-8. [Model Improvement](#model-improvement)
-9. [Deployment](#deployment)
-
-## Introduction
-This project focuses on building a spam SMS classifier using machine learning techniques. The steps include data cleaning, EDA, text preprocessing, model building, and evaluation. The classifier is trained on a dataset of SMS messages labeled as spam or ham.
-
-## Dataset
-The dataset used in this project is a CSV file (`spam.csv`) containing SMS messages labeled as spam or ham. It includes information about the type of message and additional columns that were cleaned during the data cleaning process.
+1. [Data Cleaning](#data-cleaning)
+2. [Exploratory Data Analysis (EDA)](#eda)
+3. [Data Preprocessing](#data-preprocessing)
+4. [Model Building](#model-building)
+5. [Evaluation](#evaluation)
+6. [Model Improvement](#model-improvement)
+7. [Deployment](#deployment)
 
 ## Data Cleaning
-The initial dataset contained some unnecessary columns (`Unnamed: 2`, `Unnamed: 3`, `Unnamed: 4`), which were removed. Duplicate values were also removed to ensure the quality of the dataset.
+
+The initial step includes loading the dataset, inspecting its structure, and performing necessary data cleaning operations. This involves removing unnecessary columns, handling missing values, and dropping duplicate entries.
 
 ## Exploratory Data Analysis (EDA)
-EDA involves analyzing the distribution of spam and ham messages, visualizing the dataset, and exploring key statistics. Imbalance in the dataset is addressed through visualizations.
 
-## Text Preprocessing
-Text preprocessing includes converting text to lowercase, tokenization, removing special characters, stopwords, and applying stemming. The processed text is then used for model training.
+Exploratory Data Analysis is performed to understand the distribution of spam and ham messages, visualize the data, and analyze the length and structure of messages.
+
+## Data Preprocessing
+
+Text preprocessing steps include converting text to lowercase, tokenization, removing special characters, stopwords, and applying stemming.
 
 ## Model Building
-The project uses various classifiers such as Gaussian Naive Bayes, Multinomial Naive Bayes, Bernoulli Naive Bayes, Support Vector Machine, K-Nearest Neighbors, Random Forest, AdaBoost, Bagging, Extra Trees, Gradient Boosting, and XGBoost. The models are trained, and their performances are evaluated.
+
+Several machine learning models are trained, including Naive Bayes (Gaussian, Multinomial, and Bernoulli), Support Vector Classifier (SVC), Decision Tree, Random Forest, AdaBoost, Gradient Boosting, XGBoost, etc.
 
 ## Evaluation
-The models are evaluated based on accuracy, precision, and other relevant metrics. The performance of each model is discussed, and the best-performing model is chosen.
+
+Models are evaluated using metrics such as accuracy, precision, and confusion matrix. The performance of each model is compared to identify the best-performing ones.
 
 ## Model Improvement
-To enhance the model's performance, different strategies can be employed, such as adjusting hyperparameters, changing vectorizer parameters, or trying different algorithms. The README discusses the options considered for improving the model.
+
+Different techniques to improve the model are explored, including changing parameters such as `max_features` in TF-IDF, scaling features, and considering the number of characters in messages.
 
 ## Deployment
-The final trained model is saved using `pickle` for future use. If applicable, information about deploying the model to a website or other platforms is provided.
 
-Feel free to contribute, report issues, or suggest improvements!
+The final model is saved using Pickle, and a simple Streamlit web application is created for user interaction. Users can input a message, and the model will predict whether it's spam or not.
+
+## Usage
+
+To use the model, run the Streamlit application locally. Ensure you have the required dependencies installed, and the model and vectorizer files are available.
+
+Feel free to modify the code and experiment with different models or improvements.
+
+Happy coding!
+
+
+
 
 
