@@ -1,6 +1,6 @@
-# Spam SMS Classifier
+# Email Spam Classifier
 
-This repository contains code for a Spam SMS Classifier. The classifier is built using Natural Language Processing (NLP) techniques and machine learning algorithms to classify SMS messages into spam or non-spam (ham) categories. The project involves data cleaning, exploratory data analysis (EDA), text preprocessing, model building, evaluation, and deployment.
+This repository contains code for a Email Spam Classifier. The classifier is built using Natural Language Processing (NLP) techniques and machine learning algorithms to classify Email messages into spam or non-spam (ham) categories. The project involves data cleaning, exploratory data analysis (EDA), text preprocessing, model building, evaluation, and deployment.
 
 ## Files and Directory Structure
 - `spam_sms_classifier.ipynb`: Jupyter Notebook containing the code for the entire project.
